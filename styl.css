@@ -16,23 +16,43 @@ body {
     background: #050801;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    transition: background-color 2000ms linear;
 }
-
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 button {
-    position: relative;
-    display: inline-block;
-    padding: 25px 30px;
-    margin: 40px 0;
-    background-color: rgb(99, 61, 61);
-    color: #03e9f4;
-    text-decoration: none;
+    min-width: 300px;
+    min-height: 60px;
+    font-family: "Nunito", sans-serif;
+    font-size: 22px;
     text-transform: uppercase;
-    transition: 0.5s;
-    letter-spacing: 4px;
-    overflow: hidden;
-    margin-right: 50px;
-
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #1f1f3f;
+    background: #4fd1c5;
+    background: linear-gradient(90deg,
+            rgba(129, 230, 217, 1) 0%,
+            rgba(79, 209, 197, 1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    margin: 30px;
+      box-shadow:0px 7px 15px 4px rgba(6, 101, 92, 1);
+      -webkit-box-shadow:0px 7px 15px 4px rgba(6, 101, 92, 1);
+      -moz-box-shadow:0px 7px 15px 4px rgba(6, 101, 92, 1);
+    
 }
+
+
 
 button:hover {
     background: #03e9f4;
@@ -139,4 +159,7 @@ button span:nth-child(4) {
     100% {
         bottom: 100%;
     }
+}
+.hidden{
+    display: none;
 }
